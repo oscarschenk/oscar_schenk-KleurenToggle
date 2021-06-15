@@ -1,0 +1,119 @@
+#nav {
+  margin-left: 0px;
+}
+
+#body {
+  height: 100%;
+}
+
+.kleurTextBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -40px;
+}
+
+.kleurText {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  height: 80px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger {
+  width: 70px;
+  height: 70px;
+}
+
+.menu {
+  width: 300px;
+}
+
+.colorMenu {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+  color: #fff;
+  border: 5px solid white;
+}
+
+.colorMenu li {
+  padding: 30px;
+}
+
+.colorMenu li:nth-child(1) {
+  background-color: red;
+}
+
+.colorMenu li:nth-child(2) {
+  background-color: green;
+}
+
+.colorMenu li:nth-child(3) {
+  background-color: blue;
+}
+
+.colorMenu li:nth-child(4) {
+  background-color: pink;
+}
+
+.colorMenu li:nth-child(5) {
+  background-color: purple;
+}
+
+.off-screen {
+  left: -320px;
+  position: absolute;
+  transition: 500ms ease-in-out;
+}
+
+.display {
+  position: absolute;
+  left: 0px;
+  transition: 500ms ease-in-out;
+}
+
+.rood {
+  background-color: red;
+}
+
+.groen {
+  background-color: green;
+}
+
+.blauw {
+  background-color: blue;
+}
+
+.roze {
+  background-color: pink;
+}
+
+.paars {
+  background-color: purple;
+}
+
+.reset {
+  background-color: #fff;
+}
+
+.slide-right {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
