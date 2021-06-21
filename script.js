@@ -1,6 +1,7 @@
+let toggle = document.getElementById("menu");
+
 function menuToggle() {
-    let toggle = document.getElementById("menu");
-    toggle.classList.add("display");
+    toggle.classList.toggle("display");
     body.classList.toggle("reset");
     body.classList.remove("rood");
     body.classList.remove("groen")
@@ -42,6 +43,8 @@ let maakRood = function (){
     body.classList.remove("roze")
     body.classList.remove("paars")
     kleurText.innerHTML = "Ik ben ROOD";
+    toggle.classList.toggle("display");
+
 }
 
 let maakGroen = function (){
@@ -52,6 +55,8 @@ let maakGroen = function (){
     body.classList.remove("roze")
     body.classList.remove("paars")
     kleurText.innerHTML = "Ik ben GROEN";
+    toggle.classList.toggle("display");
+
 }
 
 let maakBlauw = function (){
@@ -72,6 +77,8 @@ let maakRoze = function (){
     body.classList.remove("rood")
     body.classList.remove("paars")
     kleurText.innerHTML = "Ik ben ROZE";
+    toggle.classList.toggle("display");
+
 }
 
 let maakPaars = function (){
@@ -82,6 +89,8 @@ let maakPaars = function (){
     body.classList.remove("roze")
     body.classList.remove("rood")
     kleurText.innerHTML = "Ik ben PAARS";
+    toggle.classList.toggle("display");
+
 }
 
 rood.addEventListener("click", maakRood);
